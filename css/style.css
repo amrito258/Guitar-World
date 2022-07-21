@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-shadow: 4px -8px 22px 1px #000;
+}
+
+.header-logo img{
+    width: 250px;
+    height: auto;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 600px;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 3px;
+    width: 120px;
+    text-align: center;
+    transition: all linear 0.2s;
+    font-weight: 599;
+    margin: 5px;
+}
+
+.nav-bar a:hover{
+    background-color: red;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.main-intro-sec{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.main-intro-sec img{
+    width: 45%;
+    height: auto;
+}
+
+.main-intro-part-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.main-intro-part-text p{
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+}
+
+.main-intro-part-text a{
+    text-decoration: none;
+    color: red;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 5px 15px;
+    margin-top: 20px;
+    font-weight: 599;
+    transition: all 0.2s linear;
+}
+
+@media only screen and (max-width:869px){
+    header{
+        justify-content: center;
+    }
+
+    .nav-bar{
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width:600px){
+
+}
+
+@media only screen and (max-width:730px){
+    .main-intro-sec{
+        flex-direction: column;
+    }
+
+    .main-intro-sec img{
+        width: 80%;
+    }
+
+    .main-intro-part-text{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:420px){
+    .main-intro-part-text p{
+        font-size: 36px;
+    }
+
+    .main-intro-sec img{
+        width: 100%;
+    }
+
+    .nav-bar a{
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width:330px){
+    .main-intro-part-text p{
+        font-size: 30px;
+    }
+
+    .main-intro-part-text a{
+        font-size: 14px;
+    }
+}
+
+/* media query of index page end */
