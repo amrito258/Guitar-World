@@ -1,15 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
 }
 
 /* header styles start */
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,12 +18,12 @@ header{
     box-shadow: 4px -8px 22px 1px #000;
 }
 
-.header-logo img{
+.header-logo img {
     width: 250px;
     height: auto;
 }
 
-.nav-bar{
+.nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -31,7 +31,7 @@ header{
     width: 600px;
 }
 
-.nav-bar a{
+.nav-bar a {
     text-decoration: none;
     color: red;
     font-size: 20px;
@@ -44,7 +44,7 @@ header{
     margin: 5px;
 }
 
-.nav-bar a:hover{
+.nav-bar a:hover {
     background-color: red;
     color: white;
     transform: translateY(-3px);
@@ -54,7 +54,7 @@ header{
 
 /* main intro section styles start */
 
-.main-intro-sec{
+.main-intro-sec {
     background-color: red;
     display: flex;
     align-items: center;
@@ -62,25 +62,25 @@ header{
     flex-wrap: wrap;
 }
 
-.main-intro-sec img{
+.main-intro-sec img {
     width: 45%;
     height: auto;
 }
 
-.main-intro-part-text{
+.main-intro-part-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: start;
 }
 
-.main-intro-part-text p{
+.main-intro-part-text p {
     font-size: 42px;
     font-weight: bold;
     color: white;
 }
 
-.main-intro-part-text a{
+.main-intro-part-text a {
     text-decoration: none;
     color: red;
     background-color: white;
@@ -96,15 +96,15 @@ header{
 
 /* lesson intro section styles start */
 
-.lesson-intro-sec{
+.lesson-intro-sec {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 40px 0;
+    padding: 80px 0;
 }
 
-.lesson-intro-box{
+.lesson-intro-box {
     width: 320px;
     height: 400px;
     position: relative;
@@ -113,27 +113,27 @@ header{
     margin: 10px;
 }
 
-.lesson-intro-box:nth-child(3){
+.lesson-intro-box:nth-child(3) {
     align-self: center;
 }
 
-.lesson-intro-box-img{
+.lesson-intro-box-img {
     width: 90%;
     height: auto;
     position: absolute;
 }
 
-.lesson-intro-box-img img{
+.lesson-intro-box-img img {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-.lesson-intro-box-img img:hover{
+.lesson-intro-box-img img:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.lesson-intro-box-text{
+.lesson-intro-box-text {
     align-self: flex-end;
     background-color: rgb(223, 219, 219);
     height: 58%;
@@ -144,131 +144,255 @@ header{
     border-radius: 10px;
 }
 
-.lesson-intro-box-text h2{
+.lesson-intro-box-text h2 {
     font-size: 24px;
     margin-top: 40px;
 }
 
-.lesson-intro-box-text p{
+.lesson-intro-box-text p {
     font-size: 15px;
 }
 
 /* lesson intro section styles end */
 
+/* beginner section styles start */
+
+.beginner-sec{
+    background-color: whitesmoke;
+    padding: 60px 0;
+}
+
+.beginner-sec-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.beginner-sec h2, .intermediate-lessons-intro-sec h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.beginner-sec h2 span{
+    color: red;
+}
+
+.beginner-sec-img{
+    height: auto;
+    width: 500px;
+    border: red 4px solid;
+    margin: 6px;
+}
+
+.beginner-sec-img img{
+    width: 100%;
+    height: auto;
+}
+
+.beginner-sec-text{
+    width: 600px;
+    margin: 6px;
+}
+
+.beginner-sec-text p{
+    padding: 8px;
+}
+
+/* beginner section styles end */
+
+/* intermediate lessons intro section styles start */
+
+.intermediate-lessons-intro-sec{
+    background-color: whitesmoke;
+}
+
+.intermediate-lessons-intro-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.intermediate-lessons-intro-box{
+    width: 400px;
+    height: auto;
+    margin: 10px;
+    border: 3px solid red;
+    border-radius: 10px;
+}
+
+.intermediate-lessons-intro-box img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.intermediate-lessons-intro-sec h2 span{
+    font-size: 32px;
+    color: red;
+}
+
+/* intermediate lessons intro section styles end */
+
 /* media query of index page start */
 
-@media only screen and (max-width:869px){
-    header{
+@media only screen and (max-width:869px) {
+    header {
         justify-content: center;
     }
 
-    .nav-bar{
+    .nav-bar {
         margin-top: 20px;
     }
 }
 
-@media only screen and (max-width:730px){
-    .main-intro-sec{
+@media only screen and (max-width:730px) {
+    .main-intro-sec {
         flex-direction: column;
         padding: 20px;
     }
 
-    .main-intro-sec img{
+    .main-intro-sec img {
         width: 80%;
     }
 
-    .main-intro-part-text{
+    .main-intro-part-text {
         text-align: center;
         justify-content: center;
         align-items: center;
     }
 }
 
-@media only screen and (max-width:420px){
-    .main-intro-part-text p{
+@media only screen and (max-width:420px) {
+    .main-intro-part-text p {
         font-size: 36px;
     }
 
-    .main-intro-sec img{
+    .main-intro-sec img {
         width: 100%;
     }
 
-    .nav-bar a{
+    .nav-bar a {
         font-size: 16px;
     }
 
 }
 
-@media only screen and (max-width:330px){
-    .main-intro-part-text p{
+@media only screen and (max-width:330px) {
+    .lesson-intro-box-text h2{
+        margin-top: 20px !important;
+    }
+
+    .lesson-intro-box{
+        height: 330px !important;
+    }
+
+    .main-intro-part-text p {
         font-size: 30px;
     }
 
-    .main-intro-part-text a{
+    .main-intro-part-text a {
         font-size: 14px;
     }
 }
 
-@media only screen and (max-width:680px){
-    .lesson-intro-box{
+@media only screen and (max-width:680px) {
+    .lesson-intro-box {
         margin: 20px 10px;
+    }
+
+    .beginner-sec-img{
+        width: 80%;
+    }
+
+    .beginner-sec-text{
+        width: 100%;
     }
 }
 
-@media only screen and (max-width:1022px){
-    .lesson-intro-sec{
+@media only screen and (max-width:1022px) {
+    .lesson-intro-sec {
         flex-direction: column;
     }
 
-    .lesson-intro-box{
+    .lesson-intro-box {
         width: 500px;
         height: 450px;
     }
 
-    .lesson-intro-box-text h2{
+    .lesson-intro-box-text h2 {
         margin-top: 120px;
     }
 }
 
-@media only screen and (max-width:540px){
-    .lesson-intro-box{
+@media only screen and (max-width:540px) {
+    .lesson-intro-box {
         width: 80%;
         height: 400px;
     }
 
-    .lesson-intro-box-text h2{
+    .lesson-intro-box-text h2 {
         margin-top: 80px;
+    }
+
+    .beginner-sec h2{
+        font-size: 30px;
+    }
+
+    .intermediate-lessons-intro-sec h2{
+        font-size: 34px;
+    }
+
+    .intermediate-lessons-intro-sec h2 span{
+        font-size: 24px;
     }
 }
 
-@media only screen and (max-width:380px){
-    .lesson-intro-box{
+@media only screen and (max-width:380px) {
+    .lesson-intro-box {
         height: 330px;
     }
 
-    .lesson-intro-box-text h2{
+    .lesson-intro-box-text h2 {
         margin-top: 60px;
     }
 }
 
-@media only screen and (max-width:350px){
-    .lesson-intro-box-text h2{
+@media only screen and (max-width:350px) {
+    .lesson-intro-box-text h2 {
         margin-top: 50px;
     }
 }
 
-@media only screen and (max-width:467px){
-    .lesson-intro-box{
+@media only screen and (max-width:467px) {
+    .lesson-intro-box {
         height: 360px;
     }
 
-    .lesson-intro-box-text p{
+    .lesson-intro-box-text p {
         font-size: 14px;
     }
 
-    .lesson-intro-box-text h2{
+    .lesson-intro-box-text h2 {
         font-size: 20px;
         margin-top: 50px;
+    }
+
+    .beginner-sec-img{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width:1045px){
+    .beginner-sec-main{
+        flex-direction: column;
+    }
+
+    .beginner-sec-text{
+        text-align: center;
+        margin-top: 20px;
     }
 }
 
