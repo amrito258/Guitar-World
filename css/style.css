@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    width: 100%;
 }
 
 /* header styles start */
@@ -54,30 +55,29 @@ header {
 
 /* main intro section styles start */
 
-.main-intro-sec {
-    background-color: red;
+.main-intro-sec{
+    background: url("../images/main-back-img.jpg") no-repeat center;
+    background-size: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}
-
-.main-intro-sec img {
-    width: 45%;
-    height: auto;
+    padding: 50px;
+    height: 500px;
 }
 
 .main-intro-part-text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .main-intro-part-text p {
-    font-size: 42px;
+    font-size: 60px;
     font-weight: bold;
-    color: white;
+    color: rgb(253, 36, 36);
 }
 
 .main-intro-part-text a {
@@ -87,9 +87,16 @@ header {
     border: 2px solid white;
     border-radius: 8px;
     padding: 5px 15px;
-    margin-top: 20px;
+    margin-top: 30px;
     font-weight: 599;
+    font-size: 20px;
     transition: all 0.2s linear;
+}
+
+.main-intro-part-text a:hover{
+    transform: translateY(-6px);
+    color: white;
+    background-color: red;
 }
 
 /* main intro section styles end */
@@ -221,6 +228,11 @@ header {
     margin: 10px;
     border: 3px solid red;
     border-radius: 10px;
+    transition: all 0.2s linear;
+}
+
+.intermediate-lessons-intro-box:hover{
+    transform: translateY(-10px);
 }
 
 .intermediate-lessons-intro-box img{
@@ -236,7 +248,76 @@ header {
 
 /* intermediate lessons intro section styles end */
 
+.song-library-intro-sec{
+    background-color: whitesmoke;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.song-library-intro-sec h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.song-library-intro-sec h2 span{
+    color: red;
+}
+
+.song-library-artist-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.artist-img{
+    width: 350px;
+    height: auto;
+    margin: 10px;
+    transition: all 0.2s linear;
+}
+
+.artist-img:hover{
+    transform: translateY(-8px);
+}
+
+.artist-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.artist-img-btn{
+    margin-top: 25px;
+    background-color: red;
+    color: white;
+    padding: 6px 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.2s linear;
+}
+
+.artist-img-btn:hover{
+    color: red;
+    background-color: white;
+    border: 3px solid red;
+}
+
 /* media query of index page start */
+
+@media only screen and (max-width:900px){
+    .main-intro-sec{
+        background-size: auto 100%;
+    }
+}
 
 @media only screen and (max-width:869px) {
     header {
@@ -267,7 +348,7 @@ header {
 
 @media only screen and (max-width:420px) {
     .main-intro-part-text p {
-        font-size: 36px;
+        font-size: 42px;
     }
 
     .main-intro-sec img {
@@ -290,7 +371,7 @@ header {
     }
 
     .main-intro-part-text p {
-        font-size: 30px;
+        font-size: 38px;
     }
 
     .main-intro-part-text a {
