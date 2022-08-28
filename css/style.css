@@ -55,7 +55,7 @@ header {
 
 /* main intro section styles start */
 
-.main-intro-sec{
+.main-intro-sec {
     background: url("../images/main-back-img.jpg") no-repeat center;
     background-size: 100%;
     display: flex;
@@ -93,7 +93,7 @@ header {
     transition: all 0.2s linear;
 }
 
-.main-intro-part-text a:hover{
+.main-intro-part-text a:hover {
     transform: translateY(-6px);
     color: white;
     background-color: red;
@@ -164,46 +164,47 @@ header {
 
 /* beginner section styles start */
 
-.beginner-sec{
+.beginner-sec {
     background-color: whitesmoke;
     padding: 60px 0;
 }
 
-.beginner-sec-main{
+.beginner-sec-main {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.beginner-sec h2, .intermediate-lessons-intro-sec h2{
+.beginner-sec h2,
+.intermediate-lessons-intro-sec h2 {
     text-align: center;
     font-size: 40px;
     margin-bottom: 30px;
 }
 
-.beginner-sec h2 span{
+.beginner-sec h2 span {
     color: red;
 }
 
-.beginner-sec-img{
+.beginner-sec-img {
     height: auto;
     width: 500px;
     border: red 4px solid;
     margin: 6px;
 }
 
-.beginner-sec-img img{
+.beginner-sec-img img {
     width: 100%;
     height: auto;
 }
 
-.beginner-sec-text{
+.beginner-sec-text {
     width: 600px;
     margin: 6px;
 }
 
-.beginner-sec-text p{
+.beginner-sec-text p {
     padding: 8px;
 }
 
@@ -211,18 +212,18 @@ header {
 
 /* intermediate lessons intro section styles start */
 
-.intermediate-lessons-intro-sec{
+.intermediate-lessons-intro-sec {
     background-color: whitesmoke;
 }
 
-.intermediate-lessons-intro-main{
+.intermediate-lessons-intro-main {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.intermediate-lessons-intro-box{
+.intermediate-lessons-intro-box {
     width: 400px;
     height: auto;
     margin: 10px;
@@ -231,69 +232,68 @@ header {
     transition: all 0.2s linear;
 }
 
-.intermediate-lessons-intro-box:hover{
+.intermediate-lessons-intro-box:hover {
     transform: translateY(-10px);
 }
 
-.intermediate-lessons-intro-box img{
+.intermediate-lessons-intro-box img {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-.intermediate-lessons-intro-sec h2 span{
+.intermediate-lessons-intro-sec h2 span {
     font-size: 32px;
     color: red;
 }
 
 /* intermediate lessons intro section styles end */
 
-.song-library-intro-sec{
+.song-library-intro-sec {
     background-color: whitesmoke;
-    padding: 60px;
+    padding: 60px 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
-.song-library-intro-sec h2{
+.song-library-intro-sec h2 {
     font-size: 40px;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 30px;
 }
 
-.song-library-intro-sec h2 span{
+.song-library-intro-sec h2 span {
     color: red;
 }
 
-.song-library-artist-sec{
+.song-library-artist-sec {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.artist-img{
+.artist-img {
     width: 350px;
     height: auto;
     margin: 10px;
     transition: all 0.2s linear;
 }
 
-.artist-img:hover{
+.artist-img:hover {
     transform: translateY(-8px);
 }
 
-.artist-img img{
+.artist-img img {
     width: 100%;
     height: auto;
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.artist-img-btn{
+.artist-img-btn {
     margin-top: 25px;
     background-color: red;
     color: white;
@@ -305,17 +305,69 @@ header {
     transition: all 0.2s linear;
 }
 
-.artist-img-btn:hover{
+.artist-img-btn:hover {
     color: red;
     background-color: white;
     border: 3px solid red;
 }
 
+/* about us section styles start */
+
+.about-us-sec {
+    background: url("../images/about-us-sec.jpg") no-repeat center;
+    background-size: 100%;
+    height: 700px;
+    display: flex;
+}
+
+.about-us-text-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    flex-direction: column;
+    justify-self: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 900px;
+    padding: 50px;
+    background-color: rgba(231, 229, 229, 0.589);
+}
+
+.about-us-text-sec p,
+.about-us-text-sec h2 {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about-us-text-sec h2{
+    font-size: 32px;
+}
+
+.about-us-text-sec p{
+    font-size: 18px;
+}
+
+.about-us-text-sec a {
+    background-color: red;
+    color: white;
+    padding: 6px 15px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+/* about us section styles end */
+
 /* media query of index page start */
 
-@media only screen and (max-width:900px){
-    .main-intro-sec{
+@media only screen and (max-width:900px) {
+    .main-intro-sec, .about-us-sec {
         background-size: auto 100%;
+    }
+
+    .about-us-text-sec {
+        width: 90%;
     }
 }
 
@@ -362,11 +414,11 @@ header {
 }
 
 @media only screen and (max-width:330px) {
-    .lesson-intro-box-text h2{
+    .lesson-intro-box-text h2 {
         margin-top: 20px !important;
     }
 
-    .lesson-intro-box{
+    .lesson-intro-box {
         height: 330px !important;
     }
 
@@ -384,11 +436,11 @@ header {
         margin: 20px 10px;
     }
 
-    .beginner-sec-img{
+    .beginner-sec-img {
         width: 80%;
     }
 
-    .beginner-sec-text{
+    .beginner-sec-text {
         width: 100%;
     }
 }
@@ -418,15 +470,15 @@ header {
         margin-top: 80px;
     }
 
-    .beginner-sec h2{
+    .beginner-sec h2 {
         font-size: 30px;
     }
 
-    .intermediate-lessons-intro-sec h2{
+    .intermediate-lessons-intro-sec h2 {
         font-size: 34px;
     }
 
-    .intermediate-lessons-intro-sec h2 span{
+    .intermediate-lessons-intro-sec h2 span {
         font-size: 24px;
     }
 }
@@ -461,19 +513,109 @@ header {
         margin-top: 50px;
     }
 
-    .beginner-sec-img{
+    .beginner-sec-img {
         width: 95%;
+    }
+
+    .about-us-text-sec p{
+        font-size: 16px;
     }
 }
 
-@media only screen and (max-width:1045px){
-    .beginner-sec-main{
+@media only screen and (max-width:1045px) {
+    .beginner-sec-main {
         flex-direction: column;
     }
 
-    .beginner-sec-text{
+    .beginner-sec-text {
         text-align: center;
         margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width:1109px) {
+    .artist-img {
+        width: 230px;
+    }
+
+    .artist-img:nth-child(8) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:999px) {
+    .artist-img:nth-child(8) {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:749px) {
+    .artist-img {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width:659px) {
+    .artist-img {
+        width: 220px;
+    }
+
+    .artist-img:nth-child(8) {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:479px) {
+    .artist-img {
+        width: 190px;
+    }
+}
+
+@media only screen and (max-width:419px) {
+    .artist-img {
+        width: 170px;
+    }
+
+    .about-us-sec {
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width:379px) {
+    .artist-img {
+        width: 85%;
+    }
+
+    .artist-img:nth-child(5),
+    .artist-img:nth-child(7),
+    .artist-img:nth-child(9) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:663px) {
+    .song-library-intro-sec h2 {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width:489px) {
+    .song-library-intro-sec h2 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .about-us-sec {
+        background-image: url("../images/about-us-sec-2.jpg");
+        background-size: auto 100%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .about-us-text-sec {
+        padding: 20px;
     }
 }
 
