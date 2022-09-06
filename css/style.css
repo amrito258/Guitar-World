@@ -192,11 +192,13 @@ header {
     width: 500px;
     border: red 4px solid;
     margin: 6px;
+    border-radius: 15px;
 }
 
 .beginner-sec-img img {
     width: 100%;
     height: auto;
+    border-radius: 15px;
 }
 
 .beginner-sec-text {
@@ -341,11 +343,11 @@ header {
     margin-left: auto;
 }
 
-.about-us-text-sec h2{
+.about-us-text-sec h2 {
     font-size: 32px;
 }
 
-.about-us-text-sec p{
+.about-us-text-sec p {
     font-size: 18px;
 }
 
@@ -355,14 +357,115 @@ header {
     padding: 6px 15px;
     margin-top: 20px;
     text-decoration: none;
+    transition: all linear 0.2s;
+    border: 2px solid red;
+}
+
+.about-us-text-sec a:hover {
+    transform: translateY(-6px);
+    background-color: white;
+    color: red;
 }
 
 /* about us section styles end */
 
+/* Ready to get started section styles start */
+
+.ready-to-start-sec {
+    padding: 100px 0;
+}
+
+.ready-to-start-sec h2{
+    font-size: 55px;
+    padding: 40px 25px;
+    color: white;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Ready to get started section styles end */
+
+/* create your account sec  styles start */
+
+.creat-account-sec {
+    padding-bottom: 100px;
+}
+
+.creat-account-sec h2 {
+    text-align: center;
+}
+
+.crte-acc-cont-social-sec {
+    margin-top: 20px;
+}
+
+.crte-acc-cont-social-sec p {
+    font-weight: 599;
+    font-size: 19px;
+    text-align: center;
+}
+
+.crte-acc-social-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.crte-acc-with-social-btn {
+    width: 60px;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.crte-acc-with-social-btn img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.crte-acc-with-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.crte-acc-with-email form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.crte-acc-with-email form input {
+    margin-top: 10px;
+    width: 350px;
+    font-family: 'Poppins', sans-serif;
+    padding: 6px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.crte-acc-with-email form input:focus {
+    border: 1px solid red;
+}
+
+.crte-acc-with-email input[type=submit]{
+    width: 250px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+/* create your account sec  styles end */
+
 /* media query of index page start */
 
 @media only screen and (max-width:900px) {
-    .main-intro-sec, .about-us-sec {
+
+    .main-intro-sec,
+    .about-us-sec {
         background-size: auto 100%;
     }
 
@@ -409,6 +512,14 @@ header {
 
     .nav-bar a {
         font-size: 16px;
+    }
+
+    .ready-to-start-sec h2 {
+        font-size: 40px;
+    }
+
+    .ready-to-start-sec h2 span {
+        color: white;
     }
 
 }
@@ -517,7 +628,7 @@ header {
         width: 95%;
     }
 
-    .about-us-text-sec p{
+    .about-us-text-sec p {
         font-size: 16px;
     }
 }
@@ -592,6 +703,10 @@ header {
     .artist-img:nth-child(9) {
         display: none;
     }
+
+    .crte-acc-with-email form input {
+        width: 95%;
+    }
 }
 
 @media only screen and (max-width:663px) {
@@ -606,14 +721,20 @@ header {
     }
 }
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:700px) {
     .about-us-sec {
         background-image: url("../images/about-us-sec-2.jpg");
-        background-size: auto 100%;
+        background-size: 100% 100%;
     }
 }
 
 @media only screen and (max-width:500px){
+    .about-us-sec {
+        background-size: auto 100%;
+    }
+}
+
+@media only screen and (max-width:500px) {
     .about-us-text-sec {
         padding: 20px;
     }
