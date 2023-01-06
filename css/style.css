@@ -375,7 +375,7 @@ header {
     padding: 100px 0;
 }
 
-.ready-to-start-sec h2{
+.ready-to-start-sec h2 {
     font-size: 55px;
     padding: 40px 25px;
     color: white;
@@ -399,7 +399,8 @@ header {
     margin-top: 20px;
 }
 
-.crte-acc-cont-social-sec p {
+.crte-acc-cont-social-sec p,
+.crte-acc-with-email {
     font-weight: 599;
     font-size: 19px;
     text-align: center;
@@ -437,6 +438,19 @@ header {
     flex-direction: column;
 }
 
+.crte-acc-with-email form small {
+    font-size: 13px;
+}
+
+.crte-acc-with-email form small a {
+    color: red;
+    text-decoration: none;
+}
+
+.crte-acc-with-email form a:hover {
+    text-decoration: underline;
+}
+
 .crte-acc-with-email form input {
     margin-top: 10px;
     width: 350px;
@@ -451,14 +465,65 @@ header {
     border: 1px solid red;
 }
 
-.crte-acc-with-email input[type=submit]{
+.crte-acc-with-email input[type=submit] {
     width: 250px;
     background-color: red;
     color: white;
     cursor: pointer;
+    transition: linear 0.2s all;
+}
+
+.crte-acc-with-email input[type=submit]:hover {
+    background-color: rgb(255, 57, 57);
+    transform: translateY(-3px);
 }
 
 /* create your account sec  styles end */
+
+/* footer section styles start */
+
+footer {
+    background-color: #141414;
+    padding: 30px;
+}
+
+.links-and-mobile-apps {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mobile-apps h2 {
+    color: white;
+    font-size: 35px;
+}
+
+.mobile-apps h2 span {
+    font-size: 45px;
+}
+
+.mobile-apps .mobile-apps-img-sec {
+    margin-top: 10px;
+}
+
+.footer-links {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    display: inline;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* footer section styles end */
 
 /* media query of index page start */
 
@@ -592,6 +657,14 @@ header {
     .intermediate-lessons-intro-sec h2 span {
         font-size: 24px;
     }
+
+    .mobile-apps h2 {
+        font-size: 28px;
+    }
+
+    .mobile-apps h2 span {
+        font-size: 38px;
+    }
 }
 
 @media only screen and (max-width:380px) {
@@ -601,6 +674,12 @@ header {
 
     .lesson-intro-box-text h2 {
         margin-top: 60px;
+    }
+
+    .mobile-apps-img-sec {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
@@ -681,6 +760,24 @@ header {
     .artist-img {
         width: 190px;
     }
+
+    .links-and-mobile-apps {
+        flex-direction: column-reverse;
+        height: 500px;
+        width: 100%;
+    }
+
+    .mobile-apps {
+        margin-top: 50px;
+    }
+
+    .mobile-apps h2 {
+        text-align: center;
+    }
+
+    .footer-links a {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width:419px) {
@@ -728,7 +825,7 @@ header {
     }
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:500px) {
     .about-us-sec {
         background-size: auto 100%;
     }
@@ -737,6 +834,12 @@ header {
 @media only screen and (max-width:500px) {
     .about-us-text-sec {
         padding: 20px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .footer-links img {
+        width: 250px !important;
     }
 }
 
